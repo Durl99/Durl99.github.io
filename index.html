@@ -13,6 +13,17 @@
     </div>
     <button id="start-button">Iniciar videochat</button>
 
-    <script src="script.js"></script> <!-- Enlaza tu archivo JavaScript externo -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
+    <script>
+        const socket = io('http://localhost:3000'); // Cambia la URL según tu servidor
+
+        document.getElementById('start-button').addEventListener('click', () => {
+            // Lógica para iniciar el videochat y enviar señales al servidor
+            // Por ejemplo, aquí puedes enviar un mensaje al servidor:
+            socket.emit('mensaje', '¡Hola, servidor!');
+
+            // Más lógica para establecer conexiones y manejar señales...
+        });
+    </script>
 </body>
 </html>
