@@ -1,0 +1,10 @@
+// script.js
+document.getElementById('start-button').addEventListener('click', async () => {
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+        // Lógica para emparejar usuarios y mostrar el video en el contenedor
+        // ...
+    } catch (error) {
+        console.error('Error al acceder a la cámara o al micrófono:', error);
+    }
+});
