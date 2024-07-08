@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#contenedor-prueba {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#iniciar-prueba {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#resultados {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}
