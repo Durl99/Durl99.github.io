@@ -1,10 +1,15 @@
-// script.js
-document.getElementById('start-button').addEventListener('click', async () => {
-    try {
-        const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
-        // Lógica para emparejar usuarios y mostrar el video en el contenedor
-        // ...
-    } catch (error) {
-        console.error('Error al acceder a la cámara o al micrófono:', error);
-    }
-});
+document.getElementById('iniciar-prueba').addEventListener('click', iniciarPrueba);
+
+function iniciarPrueba() {
+    const velocidadDescarga = document.getElementById('velocidad-descarga');
+    const velocidadSubida = document.getElementById('velocidad-subida');
+    const ping = document.getElementById('ping');
+
+    // Iniciar la prueba de velocidad...
+    // (Implementar la lógica para medir la velocidad de descarga, subida y latencia)
+
+    // Mostrar los resultados
+    velocidadDescarga.textContent = '10 Mbps'; // Ejemplo de resultado
+    velocidadSubida.textContent = '5 Mbps'; // Ejemplo de resultado
+    ping.textContent = '50 ms'; // Ejemplo de resultado
+}
