@@ -3,26 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba de velocidad de internet</title>
+    <title>Mickey Bot Pro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Prueba de velocidad de internet</h1>
 
-    <div id="contenedor-prueba">
-        <button id="iniciar-prueba">Iniciar prueba</button>
+    <header>
+        <h1>Mickey Bot Pro</h1>
+    </header>
 
-        <div id="resultados">
-            <h2>Velocidad de descarga:</h2>
-            <p id="velocidad-descarga"></p>
+    <nav>
+        <a href="#features">Características</a>
+        <a href="#contact">Contacto</a>
+        <a href="#">Más Información</a>
+    </nav>
 
-            <h2>Velocidad de subida:</h2>
-            <p id="velocidad-subida"></p>
+    <div class="container">
+        <section class="intro">
+            <h2>¡Diversión al Alcance de Tu Mano!</h2>
+            <p>Con Mickey Bot Pro, puedes crear stickers, descargar música, imágenes y mucho más para disfrutar y compartir con tus amigos.</p>
+        </section>
 
-            <h2>Latencia (ping):</h2>
-            <p id="ping"></p>
-        </div>
+        <section id="features" class="features">
+            <div class="feature">
+                <h3>Creación de Stickers</h3>
+                <p>Convierte tus fotos en stickers personalizados para compartir en WhatsApp.</p>
+            </div>
+            <div class="feature">
+                <h3>Descarga de Música</h3>
+                <p>Accede a una amplia biblioteca de música y descarga tus canciones favoritas.</p>
+            </div>
+            <div class="feature">
+                <h3>Imágenes Divertidas</h3>
+                <p>Envía imágenes divertidas y memes para animar tus conversaciones.</p>
+            </div>
+            <div class="feature">
+                <h3>Juegos Interactivos</h3>
+                <p>Participa en juegos y retos divertidos con tus amigos.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo" required>
+                <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Mickey Bot Pro. Todos los derechos reservados.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
